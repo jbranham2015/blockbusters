@@ -1,1 +1,9 @@
 <h1> list of blockbusters </h1>
+
+<% all_movies = Movie.read %>
+<%= all_movies.inspect %>
+
+<div> 
+<%= Movie.first["title"] %>
+</div>
+
