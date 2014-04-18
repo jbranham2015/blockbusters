@@ -5,5 +5,25 @@
 
 <div> 
 <%= Movie.first["title"] %>
+<%= Movie.last["director"] %>
 </div>
 
+<ul>
+  <% movie = Movie.first %>
+  <li><%= movie["title"] %></li>
+  <li><%= movie["director"] %></li>
+</ul>
+
+<div>
+<ul>  
+  <% all_movies = Movie.read %>
+  <% all_movies.each do |movie| %>
+    <li><%= movie["title"] %> (<%= movie["director"] %>)       </li>
+  <% end %>
+</ul>
+
+
+
+
+
+</div>

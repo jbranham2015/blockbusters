@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140417012000) do
+ActiveRecord::Schema.define(version: 20140418141420) do
 
   create_table "books", force: true do |t|
     t.string  "title"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20140417012000) do
     t.string  "director"
     t.integer "price"
     t.text    "actor_bio"
+    t.integer "date"
   end
 
 end

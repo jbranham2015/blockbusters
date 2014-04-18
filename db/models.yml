@@ -3,11 +3,16 @@ Movie:
   - director: string
   - price: integer
   - actor_bio: text
+  - date: integer
 
 Book:
   - title: string
   - price: integer
   - summary: text
+
+
+
+
 #Book:
 #   - title: string
 #   - price: integer
